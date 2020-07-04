@@ -76,6 +76,21 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(30deg);
 }
+
+.experienceHeader {
+  background: url('images/resume.png') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+.contactHeader {
+  background: url('') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+ max-height: 150px;
+}
+
 .tag {
   background-color: cadetblue;
   color: white;
@@ -99,6 +114,20 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
+  border-color: #ff99ff;
+}
+
+.experienceCard {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 40%;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.experienceCard:hover {
   border-color: #ff99ff;
 }
 
@@ -177,6 +206,7 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+      flex-wrap: wrap;
   }
 
   header {
