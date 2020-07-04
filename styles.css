@@ -85,10 +85,9 @@ header .profile-image:hover {
 }
 
 .contactHeader {
-  background: url('') no-repeat top center ;
-  background-size: cover;
-  overflow: hidden;
- max-height: 150px;
+  background: none !important ;
+  background-color: red !important;
+ max-height: 50px !important;
 }
 
 .tag {
@@ -129,6 +128,37 @@ header .profile-image:hover {
 }
 .experienceCard:hover {
   border-color: #ff99ff;
+}
+
+.contactCard {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  min-width: 60%;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.contactCard:hover {
+  border-color: #ff99ff;
+}
+
+.submitButton {
+  background-color: green;
+  border: 0;
+  width: 120px;
+  height: 26px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input {
+  background-color: rgb(196, 194, 194);
+  border-bottom: 1px solid #999;
+  width: 300px;
 }
 
 ul.skills {
@@ -209,9 +239,17 @@ a.social:hover {
       flex-wrap: wrap;
   }
 
+  #contactHeader {
+    background: none !important ;
+   min-height: 70px;
+   max-height: 150px !important;
+  }
+
   header {
     min-height: 470px;
   }
+
+  
 
   .nav {
     max-width: 1200px;
